@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>javascript</h1>
+    <script>
+      // indexof
+      let text = 'angular';
+      let sub = 'a';
+      let index = text.indexOf(sub);
+      let indexWithPos = text.indexOf(sub, 2);
+      console.log(index, indexWithPos);
+      let lastIndex = text.lastIndexOf(sub);
+      let lastIndexWithpos = text.lastIndexOf(sub, 2);
+      console.log(lastIndex, lastIndexWithpos);
+
+      //jack and jill went up the hill
+      let input2 = 'jack and jill went up the hill';
+      input2 = input2.toLowerCase();
+
+      for (let i = 0; i < input2.length; i++) {
+        let data = input2.charAt(i);
+        if (
+          i === 0 ||
+          i === 5 ||
+          i === 9 ||
+          i === 14 ||
+          i === 19 ||
+          i === 22 ||
+          i === 26
+        ) {
+          data = input2.charAt(i).toUpperCase();
+        }
+        console.log(data);
+      }
+
+      // @ mail
+      let mail = 'surendran@gmail.com';
+      let mail1 = 'suren.com';
+      console.log('valid email:', mail.includes('@'));
+      console.log('valid email:', mail1.includes('@'));
+    </script>
+  </body>
+</html>
